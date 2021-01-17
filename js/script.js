@@ -11,7 +11,8 @@
 
   /*Экземпляры классов*/
   const card = new Card();
-  const cardList = new CardList(placesList, goods, card); //initialCards
+  //  const cardList = new CardList(placesList, goods, card); //initialCards
+  const cardList = new CardList(placesList, card); //initialCards
 
   const popupImage = new PopupImage(document.querySelector('.popup_image'), popupImageBig);
 
@@ -23,7 +24,7 @@
   placesList.addEventListener('click', card.remove);
 
   /* -----Вызовы методов----- */
-  cardList.render();
+  cardList.render(goods);
 })();
 
 
