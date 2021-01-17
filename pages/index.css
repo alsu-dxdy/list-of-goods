@@ -23,3 +23,17 @@ body {}
     color: #000000;
     margin: 0 0 32px;
 }
+
+.sorting-filtering-row {
+    display: flex;
+    margin: 0 auto 41px;
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label:first-of-type {
+    margin-right: 24px;
+}
