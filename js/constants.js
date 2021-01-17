@@ -19,7 +19,7 @@ const goods = [
             "current_price": 355
         },
         "image": {
-            "url": "./images/1.svg"
+            "url": "./images/pic1.png"
         },
         "material": 1
     },
@@ -32,7 +32,7 @@ const goods = [
             "current_price": 355.555
         },
         "image": {
-            "url": "./images/1.svg"
+            "url": "./images/pic2.png"
         },
         "material": 2
     },
@@ -45,7 +45,7 @@ const goods = [
             "current_price": 75
         },
         "image": {
-            "url": "/pic/pic3.png"
+            "url": "./images/pic3.png"
         },
         "material": 2
     },
@@ -58,7 +58,7 @@ const goods = [
             "current_price": 200
         },
         "image": {
-            "url": "/pic/pic4.png"
+            "url": "./images/pic4.png"
         },
         "material": 2
     },
@@ -71,7 +71,7 @@ const goods = [
             "current_price": 720
         },
         "image": {
-            "url": "/pic/pic1.png"
+            "url": "./images/pic1.png"
         },
         "material": 1
     },
@@ -84,7 +84,7 @@ const goods = [
             "current_price": 355.555
         },
         "image": {
-            "url": "/pic/pic2.png"
+            "url": "./images/pic2.png"
         },
         "material": 2
     },
@@ -97,7 +97,7 @@ const goods = [
             "current_price": 75
         },
         "image": {
-            "url": "/pic/pic3.png"
+            "url": "./images/pic3.png"
         },
         "material": 2
     },
@@ -110,7 +110,7 @@ const goods = [
             "current_price": 900
         },
         "image": {
-            "url": "/pic/pic4.png"
+            "url": "./images/pic4.png"
         },
         "material": 2
     }
