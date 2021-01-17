@@ -11,7 +11,7 @@
 
   /*Экземпляры классов*/
   const card = new Card();
-  const cardList = new CardList(placesList, initialCards, card);
+  const cardList = new CardList(placesList, goods, card); //initialCards
 
   const popupImage = new PopupImage(document.querySelector('.popup_image'), popupImageBig);
 

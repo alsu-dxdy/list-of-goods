@@ -1,3 +1,14 @@
+const SORT_POSITIONS = [
+    {
+        "id": "1",
+        "name": "Дерево"
+    },
+    {
+        "id": "2",
+        "name": "Металл"
+    }
+];
+
 const goods = [
     {
         "id": "1",
@@ -8,7 +19,7 @@ const goods = [
             "current_price": 355
         },
         "image": {
-            "url": "/pic/pic1.png"
+            "url": "./images/1.svg"
         },
         "material": 1
     },
@@ -21,7 +32,7 @@ const goods = [
             "current_price": 355.555
         },
         "image": {
-            "url": "/pic/pic2.png"
+            "url": "./images/1.svg"
         },
         "material": 2
     },

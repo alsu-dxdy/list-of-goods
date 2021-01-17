@@ -12,8 +12,8 @@ class CardList {
     }
 
     render() {
-        for (let data of this.arrayCards) {
-            const newCard = this.card.create(data.name, data.link);
+        for (let item of this.arrayCards) {
+            const newCard = this.card.create(item.name, item.image.url, item.price.current_price);
             this.container.appendChild(newCard);
         }
     }
