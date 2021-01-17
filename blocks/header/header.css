@@ -1,0 +1,20 @@
+.header {
+  min-height: 16px;
+  margin: 32px auto 32px;
+  display: flex;
+  width: 80%;
+}
+
+.header a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.header__link-divider {
+  margin-left: 5px;
+  margin-right: 5px;
+}

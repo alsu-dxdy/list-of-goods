@@ -1,0 +1,32 @@
+@import url(./__image/place-card__image.css);
+@import url(./__delete-icon/place-card__delete-icon.css);
+@import url(./__description/place-card__description.css);
+@import url(./__name/place-card__name.css);
+@import url(./__like-icon/place-card__like-icon.css);
+.place-card {
+  width: 336px;
+  background-color: #fff;
+  min-height: 352px;
+  border: 1px solid #c9c1c1;
+  position: relative;
+}
+
+@media (max-width: 750px) {
+  .place-card {
+    margin: 0 auto;
+  }
+}
+
+.card__heading-marker {
+  background: #EB5757;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: white;
+  padding: 3px 16px;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
