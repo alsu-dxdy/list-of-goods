@@ -11,7 +11,7 @@ class Card {
     }
   }
 
-  create(nameValue, linkValue, priceValue) {
+  create(nameValue, linkValue, currentPriceValue) {
     const placeCard = document.createElement("div");
     placeCard.classList.add("place-card");
     placeCard.insertAdjacentHTML('beforeend', `
@@ -32,7 +32,7 @@ class Card {
               <button class="place-card__cart-icon"></button>
               `);
     placeCard.querySelector(".place-card__name").textContent = nameValue;
-    placeCard.querySelector(".place-card__price").textContent = priceValue;
+    placeCard.querySelector(".place-card__price").textContent = currentPriceValue;
     placeCard.querySelector(".place-card__image").style.backgroundImage = `url(${linkValue})`;
 
     return placeCard;

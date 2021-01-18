@@ -30,4 +30,9 @@
   position: absolute;
   top: 10px;
   z-index: 1;
+  display: none;
+}
+
+.card__heading-marker_visible {
+  display: block;
 }
