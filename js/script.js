@@ -1,11 +1,11 @@
 (() => {
-  const cardsContainer = document.querySelector('.places-list');//cardsContainer - родитель кнопки "Лайк" и "Корзина"
   const popupImageBig = document.querySelector('.popup_image_big'); // картинка в попапе
-  const select = document.querySelector('select');
+  const sorter = document.querySelector('.sorter');
+  const filter = document.querySelector('.filter');
   //let goodsMainPage = goods.slice(0);
 
 
-  /*Экземпляры классов*/
+  /* ----- Экземпляры классов----- */
   const card = new Card();
   const cardList = new CardList(cardsContainer, card);
   const popupImage = new PopupImage(document.querySelector('.popup_image'), popupImageBig);
@@ -17,14 +17,12 @@
   cardsContainer.addEventListener('click', card.remove);
 
   // Слушатель на сортировку
-  select.addEventListener("change", (event) => {
+  sorter.addEventListener('change', (event) => {
     event.preventDefault();
     console.log(event.target.value);
 
     // очистить контейнер от прежних карточек
-    while (cardsContainer.firstElementChild) {
-      cardsContainer.removeChild(cardsContainer.firstElementChild);
-    }
+    clearContainer();
 
     if (event.target.value === 'default') {
       const sorteredGoods = goods.sort((a, b) => a.id - b.id);
@@ -41,6 +39,33 @@
     if (event.target.value === 'decrease') {
       const sorteredGoods = goods.sort((a, b) => b.price.current_price - a.price.current_price);
       cardList.render(sorteredGoods);
+      return;
+    }
+  });
+
+  // Слушатель на фильтр
+  filter.addEventListener('change', (event) => {
+    event.preventDefault();
+    console.log(event.target.value);
+    let filteredGoods = goods.slice(0);
+
+    if (event.target.value === '1') {
+      // очистить контейнер от прежних карточек
+      clearContainer();
+      // фильтрация:
+      filteredGoods = goods.filter(item => item.material === 1);
+      console.log(filteredGoods);
+      cardList.render(filteredGoods);
+      return;
+    }
+
+    if (event.target.value === '2') {
+      // очистить контейнер от прежних карточек
+      clearContainer();
+      // фильтрация:
+      filteredGoods = goods.filter(item => item.material === 2);
+      console.log(filteredGoods);
+      cardList.render(filteredGoods);
       return;
     }
   });

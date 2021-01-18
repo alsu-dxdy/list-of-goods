@@ -25,7 +25,7 @@
 
     <section class="sorting-filtering-row root__section">
       <label class="form__label">Сортировать по:
-        <select class="form__item">
+        <select class="form__item sorter">
           <option value="default">По умолчанию</option>
           <option value="increase">По возрастанию</option>
           <option value="decrease">По убыванию</option>
@@ -34,9 +34,9 @@
 
 
       <label class="form__label">Материал:
-        <select class="form__item">
-          <option value="metal">Металл</option>
-          <option value="wood">Дерево</option>
+        <select class="form__item filter">
+          <option value="2">Металл</option>
+          <option value="1">Дерево</option>
         </select>
       </label>
     </section>
@@ -54,6 +54,7 @@
     </div>
   </div>
   <script src="./js/constants.js"></script>
+  <script src="./js/utils.js"></script>
   <script src="./js/initialCards.js"></script>
   <script src="./js/CardList.js"></script>
   <script src="./js/Card.js"></script>

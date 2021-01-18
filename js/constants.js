@@ -1,4 +1,4 @@
-const SORT_POSITIONS = [
+const FILTER_POSITIONS = [
     {
         "id": "1",
         "name": "Дерево"
