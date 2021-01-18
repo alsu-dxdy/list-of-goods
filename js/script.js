@@ -14,7 +14,7 @@
 
   cardsContainer.addEventListener('click', popupImage.open.bind(popupImage)); //Открытие попапа с картинкой
   cardsContainer.addEventListener('click', card.like);
-  cardsContainer.addEventListener('click', card.remove);
+  cardsContainer.addEventListener('click', card.putInCart);
 
   // Слушатель на сортировку
   sorter.addEventListener('change', (event) => {

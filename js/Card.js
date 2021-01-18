@@ -5,9 +5,9 @@ class Card {
       event.target.classList.toggle('place-card__like-icon_liked');
     }
   }
-  remove(event) {
-    if (event.target.classList.contains('place-card__delete-icon')) {//клик по корзине
-      event.target.closest('.place-card').remove();
+  putInCart(event) {
+    if (event.target.classList.contains('place-card__cart-icon')) {//клик по корзине
+      event.target.classList.toggle('place-card__cart-icon_selected');
     }
   }
 
