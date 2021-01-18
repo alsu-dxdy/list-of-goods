@@ -1,13 +1,20 @@
 @font-face {
-  font-family: 'SFProDisplay600';
-  font-style: normal;
-  font-weight: 600;
-  src: url("./fonts/SFProDisplay-Semibold.woff") format("woff");
-}
-
-@font-face {
   font-family: 'SFProDisplay400';
   font-style: normal;
   font-weight: 400;
   src: url("./fonts/SFProDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SFProDisplay500';
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/SFProDisplay-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SFProDisplay600';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/SFProDisplay-Semibold.woff") format("woff");
 }
