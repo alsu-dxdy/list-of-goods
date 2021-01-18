@@ -7,8 +7,6 @@ class Card {
   }
   remove(event) {
     if (event.target.classList.contains('place-card__delete-icon')) {//клик по корзине
-      // Надо исправить: вы обращаетесь в классе к переменной  placesList объявленной глобально, так делать нельзя
-      //placesList.removeChild(event.target.closest('.place-card'));
       event.target.closest('.place-card').remove();
     }
   }
@@ -25,8 +23,8 @@ class Card {
                 <p class="place-card__code">L422WH</p>
                 <h3 class="place-card__name">Ручка дверная</h3>
                 <div class="place-card__price-container">
-                  <p class="place-card__price place-card__price_old">400</p>
-                  <p class="place-card__price">355</p>
+                  
+                  <p class="place-card__price"></p>
               </div>
               </div>
 
@@ -40,3 +38,4 @@ class Card {
     return placeCard;
   }
 }
+//<p class="place-card__price place-card__price_old"></p>
