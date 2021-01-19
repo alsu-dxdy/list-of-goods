@@ -3,6 +3,7 @@
   margin: 32px auto 32px;
   display: flex;
   width: 80%;
+  font-family: 'SFUIText400';
 }
 
 .header a {

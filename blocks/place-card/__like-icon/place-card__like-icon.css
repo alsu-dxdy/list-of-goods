@@ -39,6 +39,7 @@
 }
 
 .place-card__code {
+  font-family: 'SFUIText400';
   font-style: normal;
   font-weight: normal;
   font-size: 10px;

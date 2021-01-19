@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.place-card__price-container {
+  font-family: 'SFUIText400';
+}
+
 @media (max-width: 750px) {
   .place-card {
     margin: 0 auto;
