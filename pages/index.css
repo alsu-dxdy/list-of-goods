@@ -70,7 +70,7 @@ body {}
 }
 
 body {
-    width: 1920px;
+    /*width: 1920px;*/
     min-width: 320px;
     /*  выше установлена минимальная ширина страницы */
     max-width: 1920px;

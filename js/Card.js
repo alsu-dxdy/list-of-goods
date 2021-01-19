@@ -23,8 +23,8 @@ class Card {
                 <p class="place-card__code">L422WH</p>
                 <h3 class="place-card__name">Ручка дверная</h3>
                 <div class="place-card__price-container">
-                  
-                  <p class="place-card__price"></p>
+                <p class="place-card__price place-card__price_old"></p>
+                  <p class="place-card__price place-card__price_current"></p>
               </div>
               </div>
 
@@ -32,7 +32,7 @@ class Card {
               <button class="place-card__cart-icon"></button>
               `);
     placeCard.querySelector(".place-card__name").textContent = nameValue;
-    placeCard.querySelector(".place-card__price").textContent = currentPriceValue;
+    placeCard.querySelector(".place-card__price_current").textContent = currentPriceValue;
     placeCard.querySelector(".place-card__image").style.backgroundImage = `url(${linkValue})`;
 
     return placeCard;

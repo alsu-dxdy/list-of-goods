@@ -20,6 +20,12 @@ class CardList {
                 newCard
                     .querySelector(".card__heading-marker")
                     .classList.add("card__heading-marker_visible");
+                // и отобразить Старую цену
+                newCard
+                    .querySelector(".place-card__price_old")
+                    .classList.add("place-card__price_old-visible");
+                newCard
+                    .querySelector(".place-card__price_old").textContent = item.price.old_price;
             }
             this.container.appendChild(newCard);
         }

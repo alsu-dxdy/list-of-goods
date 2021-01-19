@@ -58,6 +58,11 @@
   text-decoration-line: line-through;
   color: #888888;
   margin-right: 9px;
+  display: none;
+}
+
+.place-card__price.place-card__price_old.place-card__price_old-visible {
+  display: block;
 }
 
 .place-card__price {
