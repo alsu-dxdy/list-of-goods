@@ -22,7 +22,7 @@ body {}
     font-size: 36px;
     line-height: 48px;
     color: #000;
-    margin: 0 0 32px;
+    margin: 0 0 30px;
 }
 
 .sorting-filtering-row {
@@ -70,10 +70,10 @@ body {}
 }
 
 body {
-    /*width: 1920px;*/
+    width: 1920px;
     min-width: 320px;
     /*  выше установлена минимальная ширина страницы */
-    max-width: 1920px;
+    max-width: cardsContainerpx;
     /* выше установили ограничение по максимальной ширине */
     margin: 0 auto;
     /* выше для экранов больше 1600px отцентрировали весь контент */

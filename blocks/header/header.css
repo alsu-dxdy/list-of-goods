@@ -2,7 +2,7 @@
   min-height: 16px;
   margin: 32px auto 32px;
   display: flex;
-  width: 80%;
+  /* width: 80%; */
   font-family: 'SFUIText400';
 }
 
@@ -16,6 +16,12 @@
 }
 
 .header__link-divider {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 11px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    width: calc(100% - 2*216px);
+  }
 }

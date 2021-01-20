@@ -9,3 +9,9 @@
     width: 90%;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .root__section {
+    width: calc(100% - 2*216px);
+  }
+}

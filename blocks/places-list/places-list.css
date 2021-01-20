@@ -1,8 +1,8 @@
 .places-list {
   display: grid;
   /* grid-template-columns: repeat(auto-fill, 336px); */
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 48px 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px 48px;
   justify-content: center;
 }
 
@@ -15,5 +15,11 @@
 @media (max-width: 750px) {
   .places-list {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  .places-list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
