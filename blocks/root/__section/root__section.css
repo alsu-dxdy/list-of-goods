@@ -1,12 +1,23 @@
 .root__section {
-  width: calc(100% - 2*216px);
+  /*3fr*/
+  width: 1104px;
   margin: auto;
-  /*border: 1px solid red;*/
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1180px) {
+  /*2fr*/
   .root__section {
-    width: 90%;
+    width: 720px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  /*1fr*/
+  .root__section {
+    width: 80%;
+    margin: auto;
+    /* width: ; */
   }
 }
 
