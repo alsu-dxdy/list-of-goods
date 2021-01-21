@@ -17,7 +17,32 @@
   .root__section {
     width: 80%;
     margin: auto;
-    /* width: ; */
+  }
+  .sorting-filtering-row {
+    flex-direction: column;
+    width: 320px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__link-divider {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /*1fr*/
+  .root__section {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /*1fr*/
+  .place-card {
+    width: 300px;
+    margin: auto;
   }
 }
 
