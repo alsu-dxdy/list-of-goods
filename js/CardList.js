@@ -25,7 +25,7 @@ class CardList {
                     .querySelector(".place-card__price_old")
                     .classList.add("place-card__price_old-visible");
                 newCard
-                    .querySelector(".place-card__price_old").textContent = item.price.old_price;
+                    .querySelector(".place-card__price_old").textContent = `${item.price.old_price}₽`;
             }
             this.container.appendChild(newCard);
         }

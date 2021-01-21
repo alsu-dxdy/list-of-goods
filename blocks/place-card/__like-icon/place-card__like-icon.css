@@ -9,7 +9,8 @@
   margin-bottom: 3px;
   position: absolute;
   right: 22px;
-  bottom: 12.89px;
+  bottom: 9.89px;
+  /* 12.89 */
 }
 
 .place-card__like-icon_liked {
@@ -30,8 +31,10 @@
   transition: transform .3s linear;
   margin-bottom: 3px;
   position: absolute;
-  right: 69px;
-  bottom: 12.89px;
+  /* right: 69px;
+  bottom: 12.89px; */
+  right: 67px;
+  bottom: 10.89px;
 }
 
 .place-card__cart-icon_selected {

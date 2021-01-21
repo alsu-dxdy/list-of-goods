@@ -32,7 +32,7 @@ class Card {
               <button class="place-card__cart-icon"></button>
               `);
     placeCard.querySelector(".place-card__name").textContent = nameValue;
-    placeCard.querySelector(".place-card__price_current").textContent = currentPriceValue;
+    placeCard.querySelector(".place-card__price_current").textContent = `${currentPriceValue}₽`;
     placeCard.querySelector(".place-card__image").style.backgroundImage = `url(${linkValue})`;
 
     return placeCard;
