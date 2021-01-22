@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
 
   like(event) {
     if (event.target.classList.contains('place-card__like-icon')) { //клик по сердечку
