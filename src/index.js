@@ -1,14 +1,15 @@
 import Card from './js/Card';
 import CardList from './js/CardList';
 import PopupImage from './js/PopupImage';
-const popupImageBig = document.querySelector('.popup_image_big'); // картинка в попапе
-const sorter = document.querySelector('.sorter');
-const filter = document.querySelector('.filter');
-//let goodsMainPage = goods.slice(0);
-// const clearContainer = require('./js/utils/clearContainer');
 import {
   goods, cardsContainer,
 } from './js/constants';
+import "./css/style.css";
+
+const { clearContainer } = require('./js/utils');
+const popupImageBig = document.querySelector('.popup_image_big'); // картинка в попапе
+const sorter = document.querySelector('.sorter');
+const filter = document.querySelector('.filter');
 
 /* ----- Экземпляры классов----- */
 const card = new Card();
@@ -21,13 +22,18 @@ cardsContainer.addEventListener('click', popupImage.open.bind(popupImage)); //О
 cardsContainer.addEventListener('click', card.like);
 cardsContainer.addEventListener('click', card.putInCart);
 
+// Отображение массива карточек
+window.addEventListener("load", () => {
+  cardList.render(goods);
+});
+
 // Слушатель на сортировку
 sorter.addEventListener('change', (event) => {
   event.preventDefault();
   console.log(event.target.value);
 
   // очистить контейнер от прежних карточек
-  // clearContainer();
+  clearContainer();
 
   if (event.target.value === 'default') {
     const sorteredGoods = goods.sort((a, b) => a.id - b.id);
@@ -56,7 +62,7 @@ filter.addEventListener('change', (event) => {
 
   if (event.target.value === '1') {
     // очистить контейнер от прежних карточек
-    // clearContainer();
+    clearContainer();
     // фильтрация:
     filteredGoods = goods.filter(item => item.material === 1);
     console.log(filteredGoods);
@@ -66,7 +72,7 @@ filter.addEventListener('change', (event) => {
 
   if (event.target.value === '2') {
     // очистить контейнер от прежних карточек
-    // clearContainer();
+    clearContainer();
     // фильтрация:
     filteredGoods = goods.filter(item => item.material === 2);
     console.log(filteredGoods);
@@ -76,7 +82,7 @@ filter.addEventListener('change', (event) => {
 });
 
 /* -----Вызовы методов----- */
-cardList.render(goods);
+
 
 
 

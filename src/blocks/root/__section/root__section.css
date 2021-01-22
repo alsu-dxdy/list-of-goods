@@ -28,6 +28,9 @@
   .header__link-divider {
     display: none;
   }
+  .header__link:last-of-type {
+    color: black
+  }
 }
 
 @media screen and (max-width: 500px) {

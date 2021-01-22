@@ -24,7 +24,8 @@ module.exports = {
     { // настройка image-webpack-loader
       test: /\.(png|jpg|gif|ico|svg)$/,
       use: [
-        'file-loader?name=./images/[name].[ext]', // папка в дист для изображений
+        // 'file-loader?name=./images/[name].[ext]', // папка в дист для изображений
+        "file-loader",
         {
           loader: 'image-webpack-loader',
           options: {},
