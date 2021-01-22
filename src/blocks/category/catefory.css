@@ -1,0 +1,13 @@
+.categoty {
+  width: 80%;
+}
+
+.category__title {
+  font-family: 'SFProDisplay600';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000;
+  margin: 0 0 30px;
+}

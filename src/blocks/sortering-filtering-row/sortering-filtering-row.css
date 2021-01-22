@@ -1,0 +1,43 @@
+.sorting-filtering-row {
+  display: flex;
+  margin: 0 auto 41px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'SFProDisplay400';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #4F4F4F;
+}
+
+.form__label_text {
+  margin-left: 16px;
+}
+
+.form__label:first-of-type {
+  margin-right: 24px;
+}
+
+.form__item {
+  font-family: 'SFProDisplay400';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000;
+  height: 40px;
+  width: 288px;
+  background: #F2F2F2 url(../../images/arrow.svg) no-repeat;
+  background-position: right 19px top 50%;
+  padding: 9px 16px 10px;
+  margin-top: 6px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
