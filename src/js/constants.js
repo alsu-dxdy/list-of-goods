@@ -20,7 +20,7 @@ const goods = [
       "current_price": 355
     },
     "image": {
-      "url": "https://i.ibb.co/BzbZSD2/pic1.png",
+      "url": "https://i.ibb.co/rMq3Hm8/pic1.png",
     },
     "material": 1
   },
@@ -72,7 +72,7 @@ const goods = [
       "current_price": 720
     },
     "image": {
-      "url": "https://i.ibb.co/BzbZSD2/pic1.png",
+      "url": "https://i.ibb.co/rMq3Hm8/pic1.png",
     },
     "material": 1
   },
